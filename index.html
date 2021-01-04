@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container text-center mt-5">
+      <h1>EXCHANGE APP</h1>
+      <div class="currency container mt-4">
+        <div class="currency-box form-group custom-css" id="currency-box-from">
+          <p>From:</p>
+        </div>
+        <div class="currency-box form-group custom-css" id="currency-box-to">
+          <p>To:</p>
+        </div>
+        <div
+          class="align-items-center currency-amount form-group custom-css p-1"
+        >
+          <label class="col-form-label w-25 ml-2">Amount</label>
+          <input
+            class="form-control form-control-sm w-50"
+            type="text"
+            value="1"
+            name="amount"
+          />
+        </div>
+        <div class="currency-calculate" id="calculate-button">
+          <button class="btn-block btn-lg btn-primary rounded">
+            Calculate
+          </button>
+        </div>
+        <div class="currecy-result mt-4" id="currency-result">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
